@@ -1,1 +1,1 @@
-# BareBonesSeries
+# bareBonesjs
