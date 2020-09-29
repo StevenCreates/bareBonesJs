@@ -1,13 +1,12 @@
 import React from "react";
-import { CountDisplay } from "./components/CountDisplay";
-import { Counter } from "./components/Counter";
+import HooksExample1 from "./pages/HooksExample1";
 import BasicContext from "./utilities/BasicContext";
+
 function App() {
   return (
     <div>
       <BasicContext>
-        <CountDisplay />
-        <Counter />
+        <HooksExample1 />
       </BasicContext>
     </div>
   );
