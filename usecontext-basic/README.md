@@ -13,7 +13,7 @@ For me I find it helpful to get down to the basics without the unessicary stylin
 ### Resources
 
 - Article/Guide
-- 
+- https://medium.com/@steven_creates/how-to-use-the-usecontext-react-hook-basics-f4a858a9985f?source=post_stats_page-------------------------------------
 
 - React Documentation 
 - https://reactjs.org/docs/hooks-reference.html#usecontext
