@@ -1,8 +1,7 @@
 # useContext Basic
 
 ## Intro
-This is the first of an upcoming series of providing examples and how tos that are stripped down to the basics.
-For me I find it helpful to get down to the basics without the unessicary styling and added dependacies.
+Basic usage of all these hooks: useState, useEffect, useLayoutEffect, useRef, Suspence, lazy
 
 ## Simple to get started
 
@@ -13,7 +12,7 @@ For me I find it helpful to get down to the basics without the unessicary stylin
 ### Resources
 
 - Article/Guide
-- 
+- Coming Soon
 
 - React Documentation 
 - https://reactjs.org/docs/hooks-reference.html#usecontext
