@@ -1,7 +1,7 @@
 import React from "react";
 
-const Remove = () => {
+const Delete = () => {
   return <div></div>;
 };
 
-export default Remove;
+export default Delete;
