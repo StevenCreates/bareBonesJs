@@ -4,7 +4,7 @@ import firebase from "firebase";
 const Add = () => {
   const [value, setValue] = React.useState("");
   const db = firebase.firestore();
-  const updateValue = (event) => {
+  const getValue = (event) => {
     setValue(event.target.value);
   };
 
@@ -30,7 +30,7 @@ const Add = () => {
 
   return (
     <div style={valueStyle}>
-      <input onBlur={updateValue} type='text' />
+      <input onBlur={getValue} type='text' />
       <button type='button' onClick={addValue}>
         Add
       </button>
