@@ -4,7 +4,6 @@ import firebase from "firebase";
 export const useGetData = () => {
   const [values, setValues] = React.useState([]);
   const db = firebase.firestore();
-
   React.useEffect(() => {
     db.collection("values")
       .get()
