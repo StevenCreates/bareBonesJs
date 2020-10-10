@@ -7,12 +7,18 @@ import Update from "./Update";
 const FireStoreData = () => {
   const [values] = useGetData();
 
+  const valueStyle = {
+    width: "full",
+    textAlign: "center",
+    fontSize: "16px",
+  };
+
   return (
-    <div>
+    <div style={valueStyle}>
       <span>Values</span>
       {values.map((value) => (
         <div key={value.value}>
-          <div>{value.value}</div>
+          <div style={valueStyle}>{value.value}</div>
           <Delete doc={value.value} />
           <Update doc={value.value} />
         </div>

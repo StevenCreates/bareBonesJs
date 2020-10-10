@@ -21,11 +21,18 @@ const Add = () => {
         console.error("Error writing Value: ", error);
       });
   };
+
+  const valueStyle = {
+    width: "full",
+    textAlign: "center",
+    fontSize: "16px",
+  };
+
   return (
-    <>
+    <div style={valueStyle}>
       <input onBlur={updateValue} type='text' />
       <button onClick={addValue}>Add</button>
-    </>
+    </div>
   );
 };
 

@@ -6,6 +6,8 @@ function App() {
   const appStyles = {
     maxWidth: "1000px",
     margin: "8rem auto 8rem auto",
+    width: "full",
+    textAlign: "center",
   };
 
   const titleStyles = {
