@@ -31,7 +31,9 @@ const Add = () => {
   return (
     <div style={valueStyle}>
       <input onBlur={updateValue} type='text' />
-      <button onClick={addValue}>Add</button>
+      <button type='button' onClick={addValue}>
+        Add
+      </button>
     </div>
   );
 };
