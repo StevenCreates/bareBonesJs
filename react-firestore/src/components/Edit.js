@@ -1,7 +1,11 @@
 import React from "react";
 
 const Edit = () => {
-  return <div></div>;
+  return (
+    <>
+      <input type='text' />
+    </>
+  );
 };
 
 export default Edit;
