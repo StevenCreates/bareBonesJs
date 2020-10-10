@@ -1,15 +1,24 @@
 import React from "react";
 import Add from "./components/Add";
-import Edit from "./components/Edit";
-import Remove from "./components/Remove";
+import FireStoreData from "./components/FireStoreData";
 
 function App() {
+  const appStyles = {
+    maxWidth: "1000px",
+    margin: "8rem auto 8rem auto",
+  };
+
+  const titleStyles = {
+    display: "block",
+  };
+
   return (
-    <div>
-      <span>Basic FireStore App</span>
+    <div style={appStyles}>
+      <div stlye={titleStyles}>
+        <span>Basic FireStore App</span>
+      </div>
       <Add />
-      <Edit />
-      <Remove />
+      <FireStoreData />
     </div>
   );
 }
