@@ -1,19 +1,10 @@
 import React from "react";
 import firebase from "firebase";
 import Delete from "./Delete";
+import { useGetData } from "../hooks/useGetData";
 
 const FireStoreData = () => {
-  const [values, setValues] = React.useState([]);
-  const db = firebase.firestore();
-
-  React.useEffect(() => {
-    db.collection("values")
-      .get()
-      .then((querySnapshot) => {
-        const data = querySnapshot.docs.map((doc) => doc.data());
-        setValues(data); // array of values
-      });
-  }, [db]);
+  const [values] = useGetData();
 
   return (
     <div>
