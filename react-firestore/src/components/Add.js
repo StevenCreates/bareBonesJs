@@ -9,9 +9,17 @@ const Add = () => {
   };
 
   const addValue = () => {
-    db.collection("value").add({
-      value: value,
-    });
+    db.collection("values")
+      .doc(value)
+      .set({
+        value: value,
+      })
+      .then(function () {
+        console.log("Document successfully written!");
+      })
+      .catch(function (error) {
+        console.error("Error writing document: ", error);
+      });
   };
   return (
     <>
