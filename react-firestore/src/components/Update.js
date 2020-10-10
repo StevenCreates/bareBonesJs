@@ -1,6 +1,6 @@
 import React from "react";
 
-const Edit = () => {
+const Update = () => {
   return (
     <>
       <input type='text' />
@@ -8,4 +8,4 @@ const Edit = () => {
   );
 };
 
-export default Edit;
+export default Update;
