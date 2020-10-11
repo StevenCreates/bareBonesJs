@@ -5,7 +5,9 @@ import { useGetData } from "../hooks/useGetData";
 import Update from "./Update";
 
 const FireStoreData = () => {
-  const [values] = useGetData();
+  const [documents] = useGetData();
+
+  console.log(documents);
 
   const valueStyle = {
     width: "full",
@@ -16,11 +18,13 @@ const FireStoreData = () => {
   return (
     <div style={valueStyle}>
       <span>Values</span>
-      {values.map((value) => (
-        <div key={value.value}>
-          <div style={valueStyle}>{value.value}</div>
-          <Delete doc={value.value} />
-          <Update doc={value.value} />
+      {documents.map((documents) => (
+        <div key={documents.id}>
+          <div style={valueStyle}>
+            Document: {documents.id} Value: {documents.value.value}
+          </div>
+          <Delete doc={documents.id} />
+          <Update doc={documents.id} />
         </div>
       ))}
     </div>
