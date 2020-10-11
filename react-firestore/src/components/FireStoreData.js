@@ -1,7 +1,7 @@
 import React from "react";
-import Delete from "./Delete";
 import { useGetData } from "../hooks/useGetData";
 import Update from "./Update";
+import Delete from "./Delete";
 
 const FireStoreData = () => {
   const [documents] = useGetData();
