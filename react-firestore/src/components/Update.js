@@ -7,7 +7,6 @@ const Update = ({ doc }) => {
   const db = firebase.firestore();
   const getValue = (event) => {
     setValue(event.target.value);
-    console.log(doc, value);
   };
 
   const updateValue = () => {
