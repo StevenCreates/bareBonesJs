@@ -1,5 +1,4 @@
 import React from "react";
-import firebase from "firebase";
 import Delete from "./Delete";
 import { useGetData } from "../hooks/useGetData";
 import Update from "./Update";
