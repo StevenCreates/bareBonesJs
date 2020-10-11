@@ -27,7 +27,7 @@ Typically we refame from using dependancies in bareBonesjs, but this time it jus
 ### Resources
 
 - Article/Guide
-  Coming Soon
+- https://medium.com/@steven_creates/step-by-step-guide-on-how-to-use-google-firestore-with-react-93769994fe6c
 
 ### Find Me
 
