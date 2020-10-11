@@ -4,11 +4,11 @@ import firebase from "firebase";
 const Update = ({ doc }) => {
   const [value, setValue] = React.useState("");
   const db = firebase.firestore();
-  const updateValue = (event) => {
+  const getValue = (event) => {
     setValue(event.target.value);
   };
 
-  const updateFirestore = () => {
+  const updateValue = () => {
     db.collection("values")
       .doc(doc)
       .update({
@@ -24,8 +24,8 @@ const Update = ({ doc }) => {
 
   return (
     <>
-      <input onClick={updateValue} type='text' />
-      <button onClick={updateFirestore}>Update</button>
+      <input onClick={getValue} type='text' />
+      <button onClick={updateValue}>Update</button>
     </>
   );
 };
