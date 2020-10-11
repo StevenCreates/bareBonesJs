@@ -9,7 +9,6 @@ export const useGetData = () => {
       .get()
       .then((querySnapshot) => {
         let arr = [];
-
         querySnapshot.docs.map((doc) =>
           arr.push({ id: doc.id, value: doc.data() })
         );

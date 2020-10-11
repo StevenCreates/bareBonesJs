@@ -7,8 +7,6 @@ import Update from "./Update";
 const FireStoreData = () => {
   const [documents] = useGetData();
 
-  console.log(documents);
-
   const valueStyle = {
     width: "full",
     textAlign: "center",
