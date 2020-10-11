@@ -21,6 +21,7 @@ Typically we refame from using dependancies in bareBonesjs, but this time it jus
 
 - Follow Me and Star Repo
 - Clone Repo
+- Cd into this folder
 - Npm install
 - Update your .env with your FireStore config.
 
